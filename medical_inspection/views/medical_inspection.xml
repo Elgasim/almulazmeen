@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="view_medical_inspection_form" model="ir.ui.view">
+        <field name="name">view.medical.inspection.form</field>
+        <field name="model">medical.inspection</field>
+        <field name="arch" type="xml">
+            <form string="Inspection plan">
+                <header>
+                </header>
+                <sheet>
+                    <group name="main_information" col="4">
+                        <field name="name" string="Plan Name"/>
+                        <field name="date" />
+                        <field name="month" />
+                        <field name="company_id" />
+                    </group>
+                    <notebook>
+                        <page name="activites" string="Activites">
+                            <field name="project_ids" >
+                                <tree create="true" delete="true" edit="true" editable="bottom">
+                                    <field name="name" />
+                                    <field name="activity_id" />
+                                    <field name="wanted" />
+                                    <field name="acheived" />
+                                    <field name="ratio" />
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook> 
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_medical_inspection_tree" model="ir.ui.view">
+        <field name="name">.view.medical.inspection.tree</field>
+        <field name="model">medical.inspection</field>
+        <field name="arch" type="xml">
+            <tree string="Inspection">
+                <field name="name" />
+                <field name="date" />
+                <field name="month" />
+                <field name="company_id" />
+            </tree>
+        </field>
+    </record>
+    <record id= "action_medical_inspection_act_window" model="ir.actions.act_window">
+        <field name="name">Inspection</field>
+        <field name="res_model">medical.inspection</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="inspection_root_menu"
+        name="Medical Inspection"
+        web_icon="medical_inspection,static/icon.png"
+        groups="medical_inspection.group_inspection"
+        sequence="100"/>
+    <menuitem
+        id="inspection_main_menu"
+        name="Inspections"
+        action="action_medical_inspection_act_window"
+        parent="inspection_root_menu"
+        sequence="0"/>
+
+
+    <record id="view_medical_inspection_project_form" model="ir.ui.view">
+        <field name="name">view.medical.inspection.project.form</field>
+        <field name="model">medical.inspection.project</field>
+        <field name="arch" type="xml">
+            <form string="Inspection Project">
+                <header>
+                </header>
+                <sheet>
+                <group colspan="4">
+                    <field name="name" />
+                </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_medical_inspection_project_activity_form" model="ir.ui.view">
+        <field name="name">view.medical.inspection.project.activity.form</field>
+        <field name="model">medical.inspection.project.activity</field>
+        <field name="arch" type="xml">
+            <form string="Inspection Activity">
+                <header>
+                </header>
+                <sheet>
+                <group col="4">
+                    <field name="name" />
+                    <field name="project_id" />
+                    <field name="wanted" />
+                </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_medical_inspection_project_tree" model="ir.ui.view">
+        <field name="name">view.medical.inspection.project.tree</field>
+        <field name="model">medical.inspection.project</field>
+        <field name="arch" type="xml">
+            <tree string="Inspection Project">
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+    <record id="view_medical_inspection_project_activity_tree" model="ir.ui.view">
+        <field name="name">view.medical.inspection.project.activity.tree</field>
+        <field name="model">medical.inspection.project.activity</field>
+        <field name="arch" type="xml">
+            <tree string="Inspection Activiyies">
+                <field name="name" />
+                <field name="project_id" />
+                <field name="wanted" />
+            </tree>
+        </field>
+    </record>
+    <record id= "action_medical_inspection_project_activity_act_window" model="ir.actions.act_window">
+        <field name="name">Inspection Activities</field>
+        <field name="res_model">medical.inspection.project.activity</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id= "action_medical_inspection_project_act_window" model="ir.actions.act_window">
+        <field name="name">Inspection Project</field>
+        <field name="res_model">medical.inspection.project</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem
+        id="configuration_menu"
+        name="Configuration"
+        parent="inspection_root_menu"
+        sequence="101"/>
+    <menuitem
+        id="project_menu"
+        name="Inspection Project"
+        action="action_medical_inspection_project_act_window"
+        parent="configuration_menu"
+        sequence="0"/>
+    <menuitem
+        id="activity_menu"
+        name="Inspection Activities"
+        action="action_medical_inspection_project_activity_act_window"
+        parent="configuration_menu"
+        sequence="0"/>
+
+
+</odoo>

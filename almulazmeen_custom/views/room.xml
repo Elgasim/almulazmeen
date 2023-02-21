@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+
+        <record id="view_med_appointment_room_form" model="ir.ui.view">
+            <field name="name">view.med.appointment.room.form</field>
+            <field name="model">med.appointment.room</field>
+            <field name="arch" type="xml">
+                <form string="Room Management">
+                    <header>
+                        <field name="state" widget="statusbar" attrs="{'invisible':[('type', 'in', ('wing','icu'))]}"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group col="4">
+                            <field name="type"/>
+                            <field name="room_product_id" attrs="{'invisible':[('type', 'in', ('wing','icu'))]}"/>
+                        </group>
+                        <notebook attrs="{'invisible':[('type', 'in', ('room','vip','normal'))]}">
+                            <page name="beds" string="Beds">
+                                <field name="bed_ids">
+                                
+                                    <tree editable="top">
+                                        <field name="name" />
+                                        <field name="bed_product_id" />
+                                        <field name="state" />
+                                    </tree>
+                                </field>
+                                
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_med_appointment_room_view_tree" model="ir.ui.view">
+            <field name="name">view.med.appointment.room.tree</field>
+            <field name="model">med.appointment.room</field>
+            <field name="arch" type="xml">
+                <tree sample="1" decoration-danger="state == 'reserve'" decoration-success="state == 'empty'">
+                    <field name="name"/>
+                    <field name="type"/>
+                    <field name="state" widget="badge"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="form_med_appointment_room_bed_view_form" model="ir.ui.view">
+            <field name="name">form.med.appointment.room.bed.view.form</field>
+            <field name="model">med.appointment.room.bed</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name" />
+                        </group>
+                        <group col="4">
+                            <field name="bed_product_id" />
+                            <field name="room_id" />
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="tree_med_appointment_room_bed_view_tree" model="ir.ui.view">
+            <field name="name">tree.med.appointment.room.bed.view.tree</field>
+            <field name="model">med.appointment.room.bed</field>
+            <field name="arch" type="xml">
+                <tree string="Rooms" sample="1" decoration-danger="state == 'reserve'" decoration-success="state == 'empty'">
+                    <field name="name" />
+                    <field name="room_id"/>
+                    <field name="state" widget="badge"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id= "action_med_appointment_room_act_window" model="ir.actions.act_window">
+            <field name="name">Room</field>
+            <field name="res_model">med.appointment.room</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('type','in',('room','vip','normal'))]</field>
+        </record>
+
+        <record id= "action_med_appointment_bed_act_window" model="ir.actions.act_window">
+            <field name="name">Beds</field>
+            <field name="res_model">med.appointment.room.bed</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+            id="room_main_menu"
+            name="Room Management"
+            web_icon="almulazmeen_custom,static/bed_icon.png"
+            sequence="3"/>
+        <menuitem
+            id="room_sub_menu"
+            name="Room Configuretion"
+            parent="room_main_menu"
+            sequence="2"/>
+        <menuitem
+            id="room_add_menu"
+            name="Rooms"
+            action="action_med_appointment_room_act_window"
+            parent="room_sub_menu"
+            sequence="1"/>
+        <menuitem
+            id="bed_add_menu"
+            name="Beds"
+            action="action_med_appointment_bed_act_window"
+            parent="room_sub_menu"
+            sequence="2"/>
+
+    <record id="view_med_appointment_room_appointment_form" model="ir.ui.view">
+        <field name="name">view.med.appointment.room.appointment.form</field>
+        <field name="model">med.appointment.room.appointment</field>
+        <field name="arch" type="xml">
+            <form string="Room Appointment" create="0" edit="0" delete="0">
+                <header>
+                    <button name="unreserve_button" type="object" string="Unreserve"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group col="4">
+                        <field name="room_id"/>
+                        <field name="appointment_id" />
+                    </group>
+                    <group>
+                        <field name="patient_id" force_save="1" readonly="1" />
+                        <field name="doctor_id"  force_save="1" readonly="1" />
+                    </group>
+                    <group col="4">
+                        <field name="date_from"/>
+                        <field name="date_to" />
+                        <field name="difference" />
+                    </group>                   
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_med_appointment_room_appointment_tree" model="ir.ui.view">
+        <field name="name">view.med.appointment.room.appointment.tree</field>
+        <field name="model">med.appointment.room.appointment</field>
+        <field name="arch" type="xml">
+            <tree string="Room Appointment" create="0" edit="0" delete="0" sample="1" decoration-danger="state == 'reserve'" decoration-success="state == 'empty'">
+                <field name="room_id"/>
+                <field name="patient_id"/>
+                <field name="date_from"/>
+                <field name="date_to" />
+                <field name="difference" />
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id= "action_med_appointment_room_appointment_action" model="ir.actions.act_window">
+        <field name="name">Room Appointment</field>
+        <field name="res_model">med.appointment.room.appointment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="room_appointment_menu"
+        name="Room Appointment"
+        parent="room_main_menu"
+        action="action_med_appointment_room_appointment_action"
+        sequence="0"/>
+
+    <record id="view_med_appointment_room_bed_appointment_form" model="ir.ui.view">
+        <field name="name">view.med.appointment.room.bed.appointment.form</field>
+        <field name="model">med.appointment.room.bed.appointment</field>
+        <field name="arch" type="xml">
+            <form string="Bed Appointment" create="0" edit="0" delete="0">
+                <header>
+                    <button name="unreserve_button" type="object" string="Unreserve"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group col="4">
+                        <field name="bed_id"/>
+                        <field name="appointment_id" />
+                    </group>
+                    <group>
+                        <field name="patient_id" force_save="1" readonly="1"/>
+                        <field name="doctor_id" force_save="1" readonly="1" />
+                    </group>
+                    <group col="4">
+                        <field name="date_from"/>
+                        <field name="date_to" />
+                        <field name="difference" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_med_appointment_room_bed_appointment_tree" model="ir.ui.view">
+        <field name="name">view.med.appointment.room.bed.appointment.tree</field>
+        <field name="model">med.appointment.room.bed.appointment</field>
+        <field name="arch" type="xml">
+            <tree string="Bed Appointment" create="0" edit="0" delete="0" sample="1" decoration-danger="state == 'reserve'" decoration-success="state == 'empty'">
+                <field name="bed_id"/>
+                <field name="patient_id"/>
+                <field name="date_from"/>
+                <field name="date_to" />
+                <field name="difference" />
+                <field name="state" />
+            </tree>
+        </field>
+    </record>
+
+    <record id= "action_med_appointment_room_bed_appointment_action" model="ir.actions.act_window">
+        <field name="name">Bed Appointment</field>
+        <field name="res_model">med.appointment.room.bed.appointment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="bed_appointment_menu" 
+    name="Bed Appointment" 
+    parent="room_main_menu" 
+    action="action_med_appointment_room_bed_appointment_action" 
+    sequence="1"/>
+    </data>
+</odoo>

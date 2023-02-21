@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="product_template_form_inherit" model="ir.ui.view">
+            <field name="name">product.template.common.form.inherit</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='options']" position="inside">
+                    <span class="d-inline-block">
+                        <field name="is_lab"/>
+                        <label for="is_lab"/>
+                    </span>
+                    <span class="d-inline-block">
+                        <field name="is_operation"/>
+                        <label for="is_operation"/>
+                    </span>
+                    <span class="d-inline-block">
+                        <field name="is_med_service"/>
+                        <label for="is_med_service"/>
+                    </span>
+                    <span class="d-inline-block">
+                        <field name="is_room"/>
+                        <label for="is_room"/>
+                    </span>
+                    <span class="d-inline-block">
+                        <field name="is_bed"/>
+                        <label for="is_bed"/>
+                    </span>
+                    <span class="d-inline-block">
+                        <field name="visit_product"/>
+                        <label for="visit_product"/>
+                    </span>
+                    <!-- <span class="d-inline-block">
+                        <field name="is_ultra_sound"/>
+                        <label for="is_ultra_sound"/>
+                    </span>
+                    <span class="d-inline-block">
+                        <field name="is_image"/>
+                        <label for="is_image"/>
+                    </span>
+                    <span class="d-inline-block">
+                        <field name="is_glass"/>
+                        <label for="is_glass"/>
+                    </span>
+                    <span class="d-inline-block">
+                        <field name="is_frame"/>
+                        <label for="is_frame"/>
+                    </span> -->
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

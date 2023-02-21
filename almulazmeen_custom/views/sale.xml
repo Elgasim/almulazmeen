@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_order_form_correction" model="ir.ui.view">
+            <field name="name">sale.order.form.correction</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Correction">
+                        <button name="refresh" type="object" string="Refresh" class="btn btn-success" icon="fa-gear"/>
+                        <group string="Correction" col="2" style="color:#011F42;">
+                            <group string="OD" col="5" style="color:#011F42;">
+                                <table class="table table-border">
+                                    <thead>
+                                        <th>VISUAL ACUITY</th>
+                                        <th>SPH</th>
+                                        <th>CYL</th>
+                                        <th>AXIS</th>
+                                        <th>V/A</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>DISTANCE</td>
+                                            <td><field nolabel="1" name="od_d_sph"/></td>
+                                            <td><field nolabel="1" name="od_d_cyl"/></td>
+                                            <td><field nolabel="1" name="od_d_axis"/></td>
+                                            <td><field nolabel="1" name="od_d_va"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td>NEAR</td>
+                                            <td><field nolabel="1" name="od_n_sph"/></td>
+                                            <td><field nolabel="1" name="od_n_cyl"/></td>
+                                            <td><field nolabel="1" name="od_n_axis"/></td>
+                                            <td><field nolabel="1" name="od_n_va"/></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </group>
+                            <group string="OS" col="5" style="color:#011F42;">
+                                <table class="table table-border">
+                                    <thead>
+                                        <th>VISUAL ACUITY</th>
+                                        <th>SPH</th>
+                                        <th>CYL</th>
+                                        <th>AXIS</th>
+                                        <th>V/A</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>DISTANCE</td>
+                                            <td><field nolabel="1" name="os_d_sph"/></td>
+                                            <td><field nolabel="1" name="os_d_cyl"/></td>
+                                            <td><field nolabel="1" name="os_d_axis"/></td>
+                                            <td><field nolabel="1" name="os_d_va"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td>NEAR</td>
+                                            <td><field nolabel="1" name="os_n_sph"/></td>
+                                            <td><field nolabel="1" name="os_n_cyl"/></td>
+                                            <td><field nolabel="1" name="os_n_axis"/></td>
+                                            <td><field nolabel="1" name="os_n_va"/></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

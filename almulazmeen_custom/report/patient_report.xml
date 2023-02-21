@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <report id="report_patient_full_report"
+                model="med.appointment"
+                string="Patient Report"
+                name="almulazmeen_custom.report_med_appointment_view"
+                file="almulazmeen_custom.report_med_appointment_view"
+                report_type="qweb-pdf"/>
+
+        <template id="report_med_appointment_view">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <t t-foreach="docs" t-as="doc">
+                            <h3 class="text-center" style="text-decoration:underline;">
+                                #<span t-field="doc.name"/>
+                            </h3>
+                            <h3 class="text-center">
+                                Patient Name: <span t-field="doc.patient_id.name"/>
+                            </h3>
+                            <br/><br/>
+                            <h4><b>PATIENT PERSONAL DATA</b></h4>
+                            <table class="table table-bordered text-center">
+                                <thead>
+                                    <th>File #</th>
+                                    <th>Age</th>
+                                    <th>Doctor Name</th>
+                                    <th>REF DOCTOR</th>
+                                    <th>Gender</th>
+                                    <th>Residence</th>
+                                    <th>Occupation</th>
+                                    <th>Date of first visit</th>
+                                    <th>Next Visit</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span t-field="doc.file_number"/></td>
+                                        <td><span t-field="doc.age"/></td>
+                                        <td><span t-field="doc.doctor_id"/></td>
+                                        <td><span t-field="doc.ref_doctor"/></td>
+                                        <td><span t-field="doc.gender"/></td>
+                                        <td><span t-field="doc.residence"/></td>
+                                        <td><span t-field="doc.occupation"/></td>
+                                        <td><span t-field="doc.date"/></td>
+                                        <td><span t-field="doc.next_date"/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h4>
+                                <b>HISTORY</b>
+                            </h4>
+                            <p>
+                                <b>Hypertension</b>
+                                <t t-if="doc.hypertension==True">
+                                    <span style="margin-left:2em;">
+                                        <i class="fa fa-solid fa-check"></i>
+                                    </span>
+                                </t>
+                                <t t-if="doc.hypertension==False">
+                                    <span style="margin-left:2em;">
+                                        <i class="fa fa-times"></i>
+                                    </span>
+                                </t>
+                            </p>
+                            <p>
+                                <b>Asthma</b>
+                                <t t-if="doc.asthma==True">
+                                    <span style="margin-left:2em;">
+                                        <i class="fa fa-solid fa-check"></i>
+                                    </span>
+                                </t>
+                                <t t-if="doc.asthma==False">
+                                    <span style="margin-left:2em;">
+                                        <i class="fa fa-times"></i>
+                                    </span>
+                                </t>
+                            </p>
+                            <p>
+                                <b>Diabetus Mellitus</b>
+                                <t t-if="doc.diabetus_mellitus==True">
+                                    <span style="margin-left:2em;">
+                                        <i class="fa fa-solid fa-check"></i>
+                                    </span>
+                                </t>
+                                <t t-if="doc.diabetus_mellitus==False">
+                                    <span style="margin-left:2em;">
+                                        <i class="fa fa-times"></i>
+                                    </span>
+                                </t>
+                            </p>
+                            <p>
+                                <b>Cardiac Disorders</b>
+                                <t t-if="doc.cardiac_disorders==True">
+                                    <span style="margin-left:2em;">
+                                        <i class="fa fa-solid fa-check"></i>
+                                    </span>
+                                </t>
+                                <t t-if="doc.cardiac_disorders==False">
+                                    <span style="margin-left:2em;">
+                                        <i class="fa fa-times"></i>
+                                    </span>
+                                </t>
+                            </p>
+                            <p>
+                                <b>Respiratory Disorders</b>
+                                <t t-if="doc.respiratory_disorders==True">
+                                    <span style="margin-left:2em;">
+                                        <i class="fa fa-solid fa-check"></i>
+                                    </span>
+                                </t>
+                                <t t-if="doc.respiratory_disorders==False">
+                                    <span style="margin-left:2em;">
+                                        <i class="fa fa-times"></i>
+                                    </span>
+                                </t>
+                            </p>
+                            <p>
+                                <b>Neurological Disorders</b>
+                                <t t-if="doc.neurological_disorders==True">
+                                    <span style="margin-left:2em;">
+                                        <i class="fa fa-solid fa-check"></i>
+                                    </span>
+                                </t>
+                                <t t-if="doc.neurological_disorders==False">
+                                    <span style="margin-left:2em;">
+                                        <i class="fa fa-times"></i>
+                                    </span>
+                                </t>
+                            </p>
+                            <p>
+                                <b>Others :</b>
+                                <span t-field="doc.others"/>
+                            </p>
+                            <p>
+                                <b>Histroy of surgery :</b>
+                                <span t-field="doc.histroy_of_surgery"/>
+                            </p>
+                            <br/>
+
+                            <br/><br/>
+                            <h4><b>Lab Request</b></h4>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Created date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.lab_ids" t-as="lab">
+                                        <td><t t-esc="lab.lab_product_id.name"/></td>
+                                        <td><t t-esc="lab.create_date"/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <br/>
+                            <br/>
+                            <h4>
+                                <b>Medical Drugs</b>
+                            </h4>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Drug Name</th>
+                                        <th>Using Every</th>
+                                        <th>Comments</th>
+                                        <th>Create Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.drug_ids" t-as="drug">
+                                        <td>
+                                            <t t-esc="drug.pos_product_id.name"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="drug.use"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="drug.comments"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="drug.create_date"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br/>
+                            <br/>
+                            <h4>
+                                <b>Operations</b>
+                            </h4>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Date</th>
+                                        <th>Comments</th>
+                                        <th>Create Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.operation_ids" t-as="operation">
+                                        <td>
+                                            <t t-esc="operation.operation_product_id.name"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="operation.date"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="operation.comments"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="operation.create_date"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br/>
+                            <br/>
+                            <h4>
+                                <b>Rooms Appointment</b>
+                            </h4>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Room</th>
+                                        <th>From</th>
+                                        <th>To</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.room_appointment_ids" t-as="room">
+                                        <td>
+                                            <t t-esc="room.room_id.name"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="room.date_from"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="room.date_to"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br/>
+                            <br/>
+                            <h4>
+                                <b>Beds Appointment</b>
+                            </h4>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Bed</th>
+                                        <th>From</th>
+                                        <th>To</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.bed_appointment_ids" t-as="bed">
+                                        <td>
+                                            <t t-esc="bed.bed_id.name"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="bed.date_from"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="bed.date_to"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br/>
+                            <br/>
+                            <h4>
+                                <b>Doctor Visit</b>
+                            </h4>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Doctor</th>
+                                        <th>Comments</th>
+                                        <th>Visit Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.visit_ids" t-as="visit">
+                                        <td>
+                                            <t t-esc="visit.doctor_id.name"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="visit.comments"/>
+                                        </td>
+                                        <td>
+                                            <t t-esc="visit.date"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            
+                            
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </template>
+
+    </data>
+</odoo>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+        <record id="view_partner_form_patient_profile" model="ir.ui.view">
+            <field name="name">res.partner.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+
+
+                <xpath expr="//field[@name='parent_id']" position="replace">
+                    <field name="parent_id" invisible="1"/>
+                    <label for="is_patient"/>
+                    <field name="is_patient" attrs="{'invisible':[('company_type','=','company')]}"/>
+                    <br/>
+                    <label for="is_doctor"/>
+                    <field name="is_doctor" attrs="{'invisible':[('company_type','=','company')]}"/>
+                    <br/>
+                </xpath>
+                <xpath expr="//notebook/page[1]" position="before">
+                    <page string="Patient Information" autofocus="autofocus" attrs="{'invisible':[('is_patient','!=',True)]}">
+                        <group col="4">
+                            <field name="residence"/>
+                            <field name="occupation"/>
+                            <field name="file_number"/>
+                            <field name="dob"/>
+                            <field name="age"/>
+                            <field name="gender"/>
+                            <field name="doctor_id"/>
+                            <field name="ref_doctor"/>
+                            <field name="date"/>
+                            <field name="next_date"/>
+                        </group>
+                        <group col="2">
+                            <field name="note"/>
+                        </group>
+                    </page>
+                    <page string="Doctor Information" autofocus="autofocus" attrs="{'invisible':[('is_doctor','!=',True)]}">
+                        <group col="2">
+                            <field name="specialize_id" />
+                        </group>
+                    </page>
+                    <page string="Doctor Visit" autofocus="autofocus" attrs="{'invisible':[('is_doctor','!=',True)]}">
+                        <field name="visit_ids">
+                            <tree>
+                                <field name="patient_id" />
+                                <field name="comments" />
+                                <field name="date"/>
+                            </tree>
+                        </field>
+                        
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <!--  Filters AND Search       -->
+        <record id="view_res_partner_filter_medical" model="ir.ui.view">
+            <field name="name">res.partner.select.medical</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_res_partner_filter"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//filter[@name='type_person']" position="before">
+                    <filter string="Patients" name="patient" domain="[('is_patient', '=', True)]"/>
+                    <filter string="Doctors" name="doctor" domain="[('is_doctor', '=', True)]"/>
+                </xpath>
+
+            </field>
+        </record>
+
+
+        <!--   Patients    -->
+        <record id="res_partner_patient_action" model="ir.actions.act_window">
+            <field name="name">Patients</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner</field>
+            <field name="domain">[('is_patient','=',True)]</field>
+            <field name="context">{'search_default_patient': 1,'default_is_patient': 1}</field>
+            <field name="view_mode">kanban,tree,form</field>
+        </record>
+        <menuitem id="res_partner_patient_menu" name="Patients"  action="res_partner_patient_action"
+                  groups="almulazmeen_custom.group_reception,almulazmeen_custom.group_medical_insurance"
+                  web_icon="almulazmeen_custom,static/src/img/patient_icon.png"
+                  sequence="48"/>
+        <!--   Doctor    -->
+        <record id="res_partner_doctor_action" model="ir.actions.act_window">
+            <field name="name">Doctors</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner</field>
+            <field name="domain">[('is_doctor','=',True)]</field>
+            <field name="context">{'search_default_doctor': 1,'default_is_doctor': 1}</field>
+            <field name="view_mode">kanban,tree,form</field>
+        </record>
+
+        <menuitem
+            id="doctor_root_menu"
+            groups="almulazmeen_custom.group_reception,almulazmeen_custom.group_medical_insurance" web_icon="almulazmeen_custom,static/src/img/doctor_icon.png"
+            name="Doctor"
+            sequence="49"
+            />
+        <menuitem id="res_partner_doctor_menu" 
+            name="Doctors"  
+            action="res_partner_doctor_action"
+            parent="doctor_root_menu"  
+            sequence="0"/>
+        
+    </data>
+</odoo>

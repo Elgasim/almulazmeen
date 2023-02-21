@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <report id="report_doctor_visit_report" 
+        model="res.partner" 
+        string="Doctor visit Report" 
+        name="almulazmeen_custom.report_doctor_visit_view" 
+        file="almulazmeen_custom.report_doctor_visit_view" 
+        report_type="qweb-pdf"/>
+
+        <report id="report_doctor_invoice_report" 
+        model="res.partner" 
+        string="Doctor visit Report" 
+        name="almulazmeen_custom.report_doctor_invoice_template" 
+        file="almulazmeen_custom.report_doctor_invoice_template" 
+        report_type="qweb-pdf"/>
+
+        <template id="report_doctor_invoice_template">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="page">
+
+                        <br/>
+                        <br/>
+                        <h4>
+                            <b>Doctor Invoice</b>
+                        </h4>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Label</th>
+                                    <th>Doctor</th>
+                                    <th>Patient</th>
+                                    <th>Amount</th>
+                                    <th>Patient Payment Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="docs" t-as="doc">
+                                    
+                                    <td>
+                                        <t t-esc="doc['name']"/>
+                                    </td>
+                                    
+                                    <td>
+                                        <t t-esc="doc['doctor_id']['name']"/>
+                                    </td>
+                                  
+                                    <td>
+                                        <t t-esc="doc['partner_id']['name']"/>
+                                    </td>
+                                  
+                                    <td>
+                                        <t t-esc="doc['credit']"/>
+                                    </td>
+                                   
+                                    <td>
+                                        <t t-esc="doc['date']"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </template>
+
+
+
+        <!-- report_doctor_invoice_template -->
+
+        <template id="report_doctor_visit_view">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="page">
+
+                            <br/>
+                            <br/>
+                            <h4>
+                                <b>Doctor Visit</b>
+                            </h4>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Doctor</th>
+                                        <th>Patient</th>
+                                        <th>Comments</th>
+                                        <th>Visit Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr t-foreach="docs" t-as="doc">
+
+                                            <td>
+                                                <t t-esc="doc['doctor_id']['name']"/>
+                                            </td>
+                                            <td>
+                                                <t t-esc="doc['patient_id']['name']"/>
+                                            </td>
+                                            <td>
+                                                <t t-esc="doc['comments']"/>
+                                            </td>
+                                            <td>
+                                                <t t-esc="doc['date']"/>
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </t>
+            </t>
+        </template>
+
+    </data>
+</odoo>

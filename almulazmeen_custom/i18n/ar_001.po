@@ -1,0 +1,1615 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* almulazmeen_custom
+#
+msgid ""
+msgstr "مستشفي الملازمين"
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-21 11:54+0000\n"
+"PO-Revision-Date: 2023-02-21 11:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__invoice_count
+msgid "# of Invoices"
+msgstr "فاتوره رقم"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_drug__use__12
+msgid "12 Hours"
+msgstr "كل 12 ساعه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_drug__use__2
+msgid "2 Hours"
+msgstr "كل ساعتين"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_drug__use__24
+msgid "24 Hours"
+msgstr "كل 24 ساعه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_drug__use__4
+msgid "4 Hours"
+msgstr "كل 4 ساعات"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_drug__use__8
+msgid "8 Hours"
+msgstr "كل 8 ساعات"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "<b>Asthma</b>"
+msgstr "أزمه"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "<b>Beds Appointment</b>"
+msgstr "حجز أسره"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "<b>Cardiac Disorders</b>"
+msgstr "إضطرابات القلب"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "<b>Diabetus Mellitus</b>"
+msgstr "سكري"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_doctor_invoice_template
+msgid "<b>Doctor Invoice</b>"
+msgstr "فواتير الطبيب"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_doctor_visit_view
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "<b>Doctor Visit</b>"
+msgstr "زيارات الطبيب"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_medical_insurance_template
+msgid "<b>From : </b>"
+msgstr "من"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "<b>HISTORY</b>"
+msgstr "التاريخ المرضي"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "<b>Histroy of surgery :</b>"
+msgstr "الجراحات السابقه"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "<b>Hypertension</b>"
+msgstr "ضغط الدم"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "<b>Lab Request</b>"
+msgstr "طلب اختبارات"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "<b>Medical Drugs</b>"
+msgstr "الادويه"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_medical_insurance_template
+msgid "<b>Medical Insurance Report</b>"
+msgstr "تقرير التامين الصحي"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "<b>Neurological Disorders</b>"
+msgstr "اضطرابات عصبيه"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "<b>Operations</b>"
+msgstr "العمليات"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "<b>Others :</b>"
+msgstr "أخري"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "<b>PATIENT PERSONAL DATA</b>"
+msgstr "البيانات الاساسه للمريض"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "<b>Respiratory Disorders</b>"
+msgstr "اضطرابات الجهاز التنفسي"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "<b>Rooms Appointment</b>"
+msgstr "حجز غرفه"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_medical_insurance_template
+msgid "<b>To : </b>"
+msgstr "الي"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_medical_insurance_template
+msgid "<b>Total</b>"
+msgstr "المجموع"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "<span class=\"o_stat_text\">Beds</span>"
+msgstr "أسره"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "<span class=\"o_stat_text\">Invoices</span>"
+msgstr "الفواتير"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "<span class=\"o_stat_text\">Rooms</span>"
+msgstr "الغرف"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_sale_order__od_d_axis
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_sale_order__od_n_axis
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_sale_order__os_d_axis
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_sale_order__os_n_axis
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_order_form_correction
+msgid "AXIS"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__message_needaction
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__message_needaction
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__message_needaction
+msgid "Action Needed"
+msgstr "تحتاج فعل"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__activity_ids
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__activity_ids
+msgid "Activities"
+msgstr "أنشطه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__activity_exception_decoration
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__activity_state
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__activity_state
+msgid "Activity State"
+msgstr "حاله النشاط"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__activity_type_icon
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "ايقونه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__age
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_partner__age
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_users__age
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Age"
+msgstr "العمر"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_doctor_invoice_template
+msgid "Amount"
+msgstr "القيمه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_account_bank_statement_line__appointment_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_account_move__appointment_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_account_payment__appointment_id
+msgid "Appointment"
+msgstr "الحجز"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__asthma
+msgid "Asthma"
+msgstr "أزمه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__message_attachment_count
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__message_attachment_count
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__message_attachment_count
+msgid "Attachment Count"
+msgstr "رقم الارفاق"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Bed"
+msgstr "سرير"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.action_med_appointment_room_bed_appointment_action
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__bed_appointment_ids
+#: model:ir.ui.menu,name:almulazmeen_custom.bed_appointment_menu
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_med_appointment_room_bed_appointment_form
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_med_appointment_room_bed_appointment_tree
+msgid "Bed Appointment"
+msgstr "حجز سرير"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__name
+msgid "Bed Label"
+msgstr "عنوان السرير"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "Bed Reservations"
+msgstr "حجوزات الاسره"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__state
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed_appointment__state
+msgid "Bed Status"
+msgstr "حاله السرير"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "Bed reservation"
+msgstr "حجوزات الاسره"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_product_product__is_bed
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_product_template__is_bed
+msgid "Bed?"
+msgstr "سرير؟"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.action_med_appointment_bed_act_window
+#: model:ir.actions.act_window,name:almulazmeen_custom.med_appointment_smart_bed_action
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__bed_ids
+#: model:ir.ui.menu,name:almulazmeen_custom.bed_add_menu
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_med_appointment_room_form
+msgid "Beds"
+msgstr "أسره"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_sale_order__od_d_cyl
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_sale_order__od_n_cyl
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_sale_order__os_d_cyl
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_sale_order__os_n_cyl
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_order_form_correction
+msgid "CYL"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_card__name
+msgid "Card #"
+msgstr "بطاقه #"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__cardiac_disorders
+msgid "Cardiac Disorders"
+msgstr "اضطرابات القلب"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_account_move_line__is_med_service
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_product_product__is_med_service
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_product_template__is_med_service
+msgid "Clinical & Medical Services"
+msgstr "الخدمات الطبيه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_drug__comments
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_operation__comments
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_visit__comments
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_doctor_visit_view
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Comments"
+msgstr "تعليقات"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_report__insurance_company_ids
+msgid "Companies"
+msgstr "شركات التامين"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_company__name
+msgid "Company Name"
+msgstr "اسم الشركه"
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_hr_contract
+msgid "Contract"
+msgstr "العقد"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_order_form_correction
+msgid "Correction"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Create Date"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_specialize__create_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_invoice_report__create_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_report__create_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__create_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_drug__create_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_lab__create_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_operation__create_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__create_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_appointment__create_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__create_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed_appointment__create_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_visit__create_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_card__create_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_company__create_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_report__create_uid
+msgid "Created by"
+msgstr "انشيء بواسطه"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Created date"
+msgstr "انشيء بتاريخ"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_specialize__create_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_invoice_report__create_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_report__create_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__create_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_drug__create_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_lab__create_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_operation__create_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__create_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_appointment__create_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__create_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed_appointment__create_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_visit__create_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_card__create_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_company__create_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_report__create_date
+msgid "Created on"
+msgstr "أنشيء في"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_order_form_correction
+msgid "DISTANCE"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_operation__date
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_medical_insurance_template
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_partner__dob
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_users__dob
+msgid "Date of Birth"
+msgstr "تاريخ الميلاد"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_partner__date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_users__date
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Date of first visit"
+msgstr "تاريخ اول زياره"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_medical_insurance_template
+msgid "Description"
+msgstr "الوصف"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__diabetus_mellitus
+msgid "Diabetus Mellitus "
+msgstr "سكري"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_medical_insurance_template
+msgid "Difference"
+msgstr "الفروقات"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_specialize__display_name
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_invoice_report__display_name
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_report__display_name
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__display_name
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_drug__display_name
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_lab__display_name
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_operation__display_name
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__display_name
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_appointment__display_name
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__display_name
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed_appointment__display_name
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_visit__display_name
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_card__display_name
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_company__display_name
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_report__display_name
+msgid "Display Name"
+msgstr "الاسم"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_account_move_line__doctor_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_invoice_report__doctor_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_report__doctor_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_appointment__doctor_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed_appointment__doctor_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_visit__doctor_id
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment__state__doctor
+#: model:ir.ui.menu,name:almulazmeen_custom.doctor_root_menu
+#: model:res.groups,name:almulazmeen_custom.group_doctor
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_doctor_invoice_template
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_doctor_visit_view
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Doctor"
+msgstr "الطبيب"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_partner_form_patient_profile
+msgid "Doctor Information"
+msgstr "تفاصيل الطبيب"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.doctor_visit_invoice_report_view_form
+msgid "Doctor Invoice"
+msgstr "فواتير الطبيب"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__doctor_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_partner__doctor_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_users__doctor_id
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Doctor Name"
+msgstr "اسم الطبيب"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.doctor_visit_report_view_form
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_partner_form_patient_profile
+msgid "Doctor Visit"
+msgstr "زيارات الدكتور"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.action_doctor_visit_invoice_report_action
+#: model:ir.model,name:almulazmeen_custom.model_doctor_visit_invoice_report
+msgid "Doctor Visit Invoice Report"
+msgstr "تقرير فواتير زيارات الطبيب"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.action_doctor_visit_report_action
+#: model:ir.model,name:almulazmeen_custom.model_doctor_visit_report
+msgid "Doctor Visit Report"
+msgstr "تقرير زيارات الدكتور"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "Doctor Visits"
+msgstr "زيارات الدكتور"
+
+#. module: almulazmeen_custom
+#: model:ir.ui.menu,name:almulazmeen_custom.menu_doctor_visit_invoice
+msgid "Doctor Visits Invoices Report"
+msgstr "تقرير فواتير زيارات الطبيب"
+
+#. module: almulazmeen_custom
+#: model:ir.ui.menu,name:almulazmeen_custom.menu_doctor_visit
+msgid "Doctor Visits Report"
+msgstr "تقرير زيارات الطبيب"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.report,name:almulazmeen_custom.report_doctor_invoice_report
+#: model:ir.actions.report,name:almulazmeen_custom.report_doctor_visit_report
+msgid "Doctor visit Report"
+msgstr "تقرير زيارات الطبيب"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.res_partner_doctor_action
+#: model:ir.ui.menu,name:almulazmeen_custom.res_partner_doctor_menu
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_res_partner_filter_medical
+msgid "Doctors"
+msgstr "الطبيب"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_drug__pos_product_id
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Drug Name"
+msgstr "اسم الدواء"
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_room__state__empty
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_room_appointment__state__empty
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_room_bed__state__empty
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_room_bed_appointment__state__empty
+msgid "Empty"
+msgstr "فارغ"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_card__expiry_date
+msgid "Expiry Date"
+msgstr "إتاريخ الإنتهاء"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__res_partner__gender__f
+msgid "Female"
+msgstr "أنثي"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__file_number
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_partner__file_number
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_users__file_number
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "File #"
+msgstr "فايل رقم"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__message_follower_ids
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__message_follower_ids
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__message_follower_ids
+msgid "Followers"
+msgstr "متابعين"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__message_partner_ids
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__message_partner_ids
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "متابعين"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room__activity_type_icon
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room_bed__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_invoice_report__date_from
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_report__date_from
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_appointment__date_from
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed_appointment__date_from
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_report__date_from
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "From"
+msgstr "من"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__gender
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_partner__gender
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Gender"
+msgstr "الجنس"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "HISTORY"
+msgstr "التاريخ"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__has_message
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__has_message
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__has_message
+msgid "Has Message"
+msgstr "لديه رسايل"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__histroy_of_surgery
+msgid "Histroy of surgery"
+msgstr "تاريخ الجراحات السابقه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__hypertension
+msgid "Hypertension"
+msgstr "ضغط الدم"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_room__type__icu
+msgid "ICU"
+msgstr "العنايه المكثفه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_specialize__id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_invoice_report__id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_report__id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_drug__id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_lab__id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_operation__id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_appointment__id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed_appointment__id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_visit__id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_card__id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_company__id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_report__id
+msgid "ID"
+msgstr "الهويه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__activity_exception_icon
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__activity_exception_icon
+msgid "Icon"
+msgstr "ايقونه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room__activity_exception_icon
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room_bed__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment__message_needaction
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment__message_unread
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room__message_needaction
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room__message_unread
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room_bed__message_needaction
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room_bed__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment__message_has_error
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment__message_has_sms_error
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room__message_has_error
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room__message_has_sms_error
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room_bed__message_has_error
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room_bed__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__lab_ids
+msgid "Imaging"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_product_pricelist__is_insurance
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__account_move__payment_method__insurance
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment__payment_type__insurance
+msgid "Insurance"
+msgstr "التامين الصحي"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.med_insurance_card_action
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_account_bank_statement_line__insurance_card
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_account_move__insurance_card
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_account_payment__insurance_card
+#: model:ir.ui.menu,name:almulazmeen_custom.med_insurance_card_menu
+msgid "Insurance Card"
+msgstr "بطاقات التامين"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.med_insurance_company_action
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_card__insurance_company
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_product_pricelist__insurance_company_id
+#: model:ir.ui.menu,name:almulazmeen_custom.med_insurance_company_menu
+msgid "Insurance Company"
+msgstr "شركات التامين الصحي"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_medical_insurance_template
+msgid "Invoice #"
+msgstr "رقم الفاتوره"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__invoice_has_outstanding
+msgid "Invoice Has Outstanding"
+msgstr "رصيد سابق"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__invoice_outstanding_credits_debits_widget
+msgid "Invoice Outstanding Credits Debits Widget"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.med_appointment_smart_invoice_action
+msgid "Invoices"
+msgstr "الفواتير"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__message_is_follower
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__message_is_follower
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__message_is_follower
+msgid "Is Follower"
+msgstr "متابع؟"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_account_move_line__is_visit
+msgid "Is Visit"
+msgstr "زياره؟"
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_account_move
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_account_move_line
+msgid "Journal Item"
+msgstr "عنصر اليومية"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "Lab Requests"
+msgstr "طلب اختبارات"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_doctor_invoice_template
+msgid "Label"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.med_appointment_lab_action
+#: model:ir.ui.menu,name:almulazmeen_custom.med_appointment_lab_menu
+#: model:ir.ui.menu,name:almulazmeen_custom.med_appointment_lab_root
+#: model:res.groups,name:almulazmeen_custom.group_lab
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_lab_view_form
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_lab_view_tree
+msgid "Laboratory"
+msgstr "المعامل"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_specialize____last_update
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_invoice_report____last_update
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_report____last_update
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment____last_update
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_drug____last_update
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_lab____last_update
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_operation____last_update
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room____last_update
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_appointment____last_update
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed____last_update
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed_appointment____last_update
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_visit____last_update
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_card____last_update
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_company____last_update
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_report____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_specialize__write_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_invoice_report__write_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_report__write_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__write_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_drug__write_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_lab__write_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_operation__write_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__write_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_appointment__write_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__write_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed_appointment__write_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_visit__write_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_card__write_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_company__write_uid
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_report__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_specialize__write_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_invoice_report__write_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_report__write_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__write_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_drug__write_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_lab__write_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_operation__write_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__write_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_appointment__write_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__write_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed_appointment__write_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_visit__write_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_card__write_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_company__write_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_report__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_card__image
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_company__image
+msgid "Logo"
+msgstr "اللوغو"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__message_main_attachment_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__message_main_attachment_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__res_partner__gender__m
+msgid "Male"
+msgstr "ذكر"
+
+#. module: almulazmeen_custom
+#: model:ir.module.category,name:almulazmeen_custom.medical_category
+msgid "Medical Access"
+msgstr "صلاحيات طبيه"
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_med_appointment
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_drug__appointment_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_lab__appointment_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_operation__appointment_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_appointment__appointment_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed_appointment__appointment_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_visit__appointment_id
+msgid "Medical Appointment"
+msgstr "الحجوزات الطبيه"
+
+#. module: almulazmeen_custom
+#: model:ir.ui.menu,name:almulazmeen_custom.med_insurance_company_root
+#: model:res.groups,name:almulazmeen_custom.group_medical_insurance
+msgid "Medical Insurance"
+msgstr "حجوزات التامينات الصحيه"
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_med_insurance_card
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_insurance_card_view_form
+msgid "Medical Insurance Card"
+msgstr "بطاقه التامين الصحي"
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_med_insurance_company
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_insurance_company_view_form
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_insurance_company_view_tree
+msgid "Medical Insurance Company"
+msgstr "شركه التامين الصحي"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.med_insurance_report_action
+#: model:ir.actions.report,name:almulazmeen_custom.action_med_insurance_report
+#: model:ir.model,name:almulazmeen_custom.model_med_insurance_report
+#: model:ir.ui.menu,name:almulazmeen_custom.med_insurance_report_menu
+msgid "Medical Insurance Report"
+msgstr "تقرير التامين الصحي"
+
+#. module: almulazmeen_custom
+#: model:res.groups,name:almulazmeen_custom.group_sleeping
+msgid "Medical Sleeping"
+msgstr "التنويم"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__message_has_error
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__message_has_error
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__message_ids
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__message_ids
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "Move to Doctor"
+msgstr "تحويل للطبيب المناوب"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "Move to Reception"
+msgstr "تحويل للإستقبال"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "Move to Sleeping"
+msgstr "تحويل للتنويم"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__my_activity_date_deadline
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_order_form_correction
+msgid "NEAR"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_lab__lab_product_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_operation__operation_product_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__name
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Name"
+msgstr "اسم \وصف"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__neurological_disorders
+msgid "Neurological Disorders "
+msgstr "إضطرابات عصبيه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__activity_date_deadline
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__activity_summary
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__activity_type_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__next_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_partner__next_date
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_users__next_date
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Next Visit"
+msgstr "تاريخ الزياره القادمه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_room__type__normal
+msgid "Normal"
+msgstr "عاديه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__note
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_card__note
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_partner__note
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_users__note
+msgid "Note"
+msgstr "ملاحظات"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__message_needaction_counter
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__message_needaction_counter
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__message_has_error_counter
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__message_has_error_counter
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment__message_needaction_counter
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room__message_needaction_counter
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room_bed__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment__message_has_error_counter
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room__message_has_error_counter
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room_bed__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment__message_unread_counter
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room__message_unread_counter
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room_bed__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_order_form_correction
+msgid "OD"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_order_form_correction
+msgid "OS"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__occupation
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Occupation"
+msgstr "المهنه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__operation_ids
+msgid "Operation Request "
+msgstr "طلب عمليه"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "Operation Requests"
+msgstr "طلب عمليه"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.med_appointment_operation_action
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_product_product__is_operation
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_product_template__is_operation
+#: model:ir.ui.menu,name:almulazmeen_custom.med_appointment_operation_menu
+#: model:ir.ui.menu,name:almulazmeen_custom.med_appointment_operation_root
+#: model:res.groups,name:almulazmeen_custom.group_operations
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_operation_view_form
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_operation_view_tree
+msgid "Operations"
+msgstr "عمليات"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_account_move_line__is_operation
+msgid "Ophthalmic Operations"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__others
+msgid "Others"
+msgstr "أخري"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "PATIENT PERSONAL DATA"
+msgstr "البيانات الرئيسيه للمريض"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__patient_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_drug__patient_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_lab__patient_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_operation__patient_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_appointment__patient_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed_appointment__patient_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_visit__patient_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_card__patient_id
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_doctor_invoice_template
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_doctor_visit_view
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_medical_insurance_template
+msgid "Patient"
+msgstr "المريض"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.med_appointment_action
+#: model:ir.actions.act_window,name:almulazmeen_custom.med_appointment_action_insurance
+#: model:ir.ui.menu,name:almulazmeen_custom.med_appointment_menu
+#: model:ir.ui.menu,name:almulazmeen_custom.med_appointment_menu_insurance
+#: model:ir.ui.menu,name:almulazmeen_custom.med_appointment_root
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_tree
+msgid "Patient Appointment"
+msgstr "حجوزات المرضي"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_partner_form_patient_profile
+msgid "Patient Information"
+msgstr "بيانات المريض"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Patient Name:"
+msgstr "اسم المريض:"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_doctor_invoice_template
+msgid "Patient Payment Date"
+msgstr "تاريخ الدفعيات"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.report,name:almulazmeen_custom.report_patient_full_report
+msgid "Patient Report"
+msgstr "تقرير المريض"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.res_partner_patient_action
+#: model:ir.ui.menu,name:almulazmeen_custom.res_partner_patient_menu
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_res_partner_filter_medical
+msgid "Patients"
+msgstr "المرضي"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_account_bank_statement_line__payment_method
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_account_move__payment_method
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_account_payment__payment_method
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__payment_type
+msgid "Payment Type"
+msgstr "نوع الدفع"
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "أوامر نقطة البيع"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.med_appointment_drug_action
+#: model:ir.ui.menu,name:almulazmeen_custom.med_appointment_drug_menu
+#: model:ir.ui.menu,name:almulazmeen_custom.med_appointment_drug_root
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_drug_view_form
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_drug_view_tree
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "Prescribed Drugs"
+msgstr "الادويه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__drug_ids
+msgid "Prescribed Drugs "
+msgstr "الادويه"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_medical_insurance_template
+msgid "Price"
+msgstr "التكلفه"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_medical_insurance_template
+msgid "Price after Insurance"
+msgstr "التكلفه بعد التامين"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.product_pricelist_action3
+#: model:ir.model,name:almulazmeen_custom.model_product_pricelist
+msgid "Pricelist"
+msgstr "قائمه الأسعار"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_card__pricelist_id
+#: model:ir.ui.menu,name:almulazmeen_custom.med_insurance_company_pricelist
+msgid "Pricelists"
+msgstr "قوائم الاسعار"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.doctor_visit_invoice_report_view_form
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.doctor_visit_report_view_form
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_insurance_report_view_form
+msgid "Print"
+msgstr "طباعه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__account_move__payment_method__private
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment__payment_type__private
+msgid "Private"
+msgstr "خاص"
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_product_template
+msgid "Product Template"
+msgstr "قالب المنتج"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_medical_insurance_template
+msgid "Quantity"
+msgstr "الكميه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__ref_doctor
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_partner__ref_doctor
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_users__ref_doctor
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "REF DOCTOR"
+msgstr "الدكتور"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment__state__reception
+#: model:res.groups,name:almulazmeen_custom.group_reception
+msgid "Reception"
+msgstr "الاستقبال"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_order_form_correction
+msgid "Refresh"
+msgstr "التحديث"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "Reserve"
+msgstr "حجز"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_room__state__reserve
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_room_appointment__state__reserve
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_room_bed__state__reserve
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_room_bed_appointment__state__reserve
+msgid "Reserved"
+msgstr "محجوزه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__residence
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_partner__residence
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_users__residence
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Residence"
+msgstr "محل الاقامه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__respiratory_disorders
+msgid "Respiratory Disorders "
+msgstr "اضرابات الجهاز التنفسي"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__activity_user_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسئول"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_lab__result
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_operation__result
+msgid "Result"
+msgstr "النتيجه"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.action_med_appointment_room_act_window
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_appointment__room_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__room_id
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_room__type__room
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Room"
+msgstr "الغرفه"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.action_med_appointment_room_appointment_action
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__room_appointment_ids
+#: model:ir.ui.menu,name:almulazmeen_custom.room_appointment_menu
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_med_appointment_room_appointment_form
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_med_appointment_room_appointment_tree
+msgid "Room Appointment"
+msgstr "حجز غرفه"
+
+#. module: almulazmeen_custom
+#: model:ir.ui.menu,name:almulazmeen_custom.room_sub_menu
+msgid "Room Configuretion"
+msgstr "ادخال بيانات الغرف"
+
+#. module: almulazmeen_custom
+#: model:ir.ui.menu,name:almulazmeen_custom.room_main_menu
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_med_appointment_room_form
+msgid "Room Management"
+msgstr "اداره الغرف"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "Room Reservation"
+msgstr "حجز الغرف"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__state
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_appointment__state
+msgid "Room Status"
+msgstr "حاله الغرفه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__type
+msgid "Room Type"
+msgstr "نوع الغرفه"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "Room reservation"
+msgstr "حجز غرفه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_product_product__is_room
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_product_template__is_room
+msgid "Room?"
+msgstr "غرفه؟"
+
+#. module: almulazmeen_custom
+#: model:ir.actions.act_window,name:almulazmeen_custom.med_appointment_smart_room_action
+#: model:ir.ui.menu,name:almulazmeen_custom.room_add_menu
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.tree_med_appointment_room_bed_view_tree
+msgid "Rooms"
+msgstr "الغرف"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "SDG"
+msgstr "ج.س."
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__message_has_sms_error
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__message_has_sms_error
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_sale_order__od_d_sph
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_sale_order__od_n_sph
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_sale_order__os_d_sph
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_sale_order__os_n_sph
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_order_form_correction
+msgid "SPH"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_sale_order
+msgid "Sales Order"
+msgstr "أمر البيع"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__name
+msgid "Sequence"
+msgstr "التتابع"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment__state__sleep
+msgid "Sleeping"
+msgstr "التنويم"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_specialize__name
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_partner__specialize_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_users__specialize_id
+msgid "Specialize at:"
+msgstr "متخصص في:"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__state
+msgid "Status"
+msgstr "الحاله"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room__activity_state
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room_bed__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_appointment__difference
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed_appointment__difference
+msgid "Staying period"
+msgstr "مده الاقامه"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+msgid "This patient has payment of :"
+msgstr "لدي المريض دفعيه تساوي:"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_invoice_report__date_to
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_doctor_visit_report__date_to
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_appointment__date_to
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed_appointment__date_to
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_report__date_to
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "To"
+msgstr "الي"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_insurance_card__type
+msgid "Type"
+msgstr "النوع"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room__activity_exception_decoration
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room_bed__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__message_unread
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__message_unread
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__message_unread_counter
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__message_unread_counter
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_appointment_view_form
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_med_appointment_room_appointment_form
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_med_appointment_room_bed_appointment_form
+msgid "Unreserve"
+msgstr "غير محجوزه"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_drug__use
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Using Every"
+msgstr "الاستخدام كل:"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_sale_order__od_d_va
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_sale_order__od_n_va
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_sale_order__os_d_va
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_sale_order__os_n_va
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_order_form_correction
+msgid "V/A"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_room__type__vip
+msgid "VIP"
+msgstr "خاصه"
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.view_order_form_correction
+msgid "VISUAL ACUITY"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_visit__visit_product_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_partner__visit_ids
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_users__visit_ids
+msgid "Visit"
+msgstr "زياره"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_visit__date
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_doctor_visit_view
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.report_med_appointment_view
+msgid "Visit Date"
+msgstr "تاريخ الزياره"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__visit_ids
+msgid "Visit Request "
+msgstr "طلب الزياره"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_product_product__visit_product
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_product_template__visit_product
+msgid "Visit?"
+msgstr "زياره؟"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment__website_message_ids
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__website_message_ids
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment__website_message_ids
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room__website_message_ids
+#: model:ir.model.fields,help:almulazmeen_custom.field_med_appointment_room_bed__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields.selection,name:almulazmeen_custom.selection__med_appointment_room__type__wing
+msgid "Winger"
+msgstr "عنبر"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed_appointment__bed_id
+msgid "bed"
+msgstr "السرير"
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_doctor_specialize
+msgid "doctor.specialize"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_partner__is_doctor
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_users__is_doctor
+msgid "is Doctor"
+msgstr "طبيب؟"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_account_move_line__is_lab
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_product_product__is_lab
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_product_template__is_lab
+msgid "is Lab"
+msgstr "اختبار؟"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_partner__is_patient
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_users__is_patient
+msgid "is Patient"
+msgstr "مريض؟"
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room__room_product_id
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_med_appointment_room_bed__bed_product_id
+msgid "item"
+msgstr "منتج الغرفه"
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_med_appointment_drug
+msgid "med.appointment.drug"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_med_appointment_lab
+msgid "med.appointment.lab"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_med_appointment_operation
+msgid "med.appointment.operation"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_med_appointment_room
+msgid "med.appointment.room"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_med_appointment_room_appointment
+msgid "med.appointment.room.appointment"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_med_appointment_room_bed
+msgid "med.appointment.room.bed"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_med_appointment_room_bed_appointment
+msgid "med.appointment.room.bed.appointment"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_med_appointment_visit
+msgid "med.appointment.visit"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_insurance_card_view_tree
+msgid "med_insurance_card_tree"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model_terms:ir.ui.view,arch_db:almulazmeen_custom.med_insurance_report_view_form
+msgid "med_insurance_report_form"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_partner__occupation
+#: model:ir.model.fields,field_description:almulazmeen_custom.field_res_users__occupation
+msgid "occupation"
+msgstr "المهنه"
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_report_almulazmeen_custom_report_doctor_invoice_template
+msgid "report.almulazmeen_custom.report_doctor_invoice_template"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_report_almulazmeen_custom_report_doctor_visit_view
+msgid "report.almulazmeen_custom.report_doctor_visit_view"
+msgstr ""
+
+#. module: almulazmeen_custom
+#: model:ir.model,name:almulazmeen_custom.model_report_almulazmeen_custom_report_medical_insurance_template
+msgid "report.almulazmeen_custom.report_medical_insurance_template"
+msgstr ""

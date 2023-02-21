@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="product_pricelist_view_inherit" model="ir.ui.view">
+            <field name="name">product.pricelist.form.inherit</field>
+            <field name="model">product.pricelist</field>
+            <field name="inherit_id" ref="product.product_pricelist_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='currency_id']" position="after">
+                    <field name="is_insurance"/>
+                    <field name="insurance_company_id" attrs="{'required':[('is_insurance','=',True)]}"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="product_pricelist_view_tree_inherit" model="ir.ui.view">
+            <field name="name">product.pricelist.tree.inherit</field>
+            <field name="model">product.pricelist</field>
+            <field name="inherit_id" ref="product.product_pricelist_view_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='currency_id']" position="after">
+                    <field name="is_insurance"/>
+                    <field name="insurance_company_id" attrs="{'required':[('is_insurance','=',True)]}"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id= "product_pricelist_action3" model="ir.actions.act_window">
+            <field name="name">Pricelist</field>
+            <field name="res_model">product.pricelist</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('is_insurance','=',True)]</field>
+            <field name="context">{'default_is_insurance':True}</field>
+        </record>
+        
+
+        <menuitem action="product_pricelist_action3"
+                  id="med_insurance_company_pricelist"
+                  name="Pricelists"
+           parent="med_insurance_company_root" sequence="5"/>
+
+    </data>
+</odoo>

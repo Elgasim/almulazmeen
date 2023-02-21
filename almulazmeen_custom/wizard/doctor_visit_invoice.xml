@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record id="doctor_visit_invoice_report_view_form" model="ir.ui.view">
+            <field name="name">form.doctor.visit.invoice.report.view_form</field>
+            <field name="model">doctor.visit.invoice.report</field>
+            <field name="arch" type="xml">
+                <form string="Doctor Invoice">
+                    <sheet>
+                        <group col="4">
+                            <field name="date_from"/>
+                            <field name="date_to"/>
+                            <field name="doctor_id"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button name="print_report" type="object" string="Print" icon="fa-print" class="btn btn-success"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_doctor_visit_invoice_report_action" model="ir.actions.act_window">
+            <field name="name">Doctor Visit Invoice Report</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">doctor.visit.invoice.report</field>
+            <field name="target">new</field>
+            <field name="view_mode">form</field>
+        </record>
+        <menuitem id="menu_doctor_visit_invoice" name="Doctor Visits Invoices Report" action="action_doctor_visit_invoice_report_action" parent="doctor_root_menu" sequence="100"/>
+    </data>
+</odoo>

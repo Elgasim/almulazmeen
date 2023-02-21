@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--  smart buttons Actions -->
+        <record id="med_appointment_smart_invoice_action" model="ir.actions.act_window">
+            <field name="name">Invoices</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.move</field>
+            <field name="domain">[('appointment_id','=',active_id),('move_type', '=', 'out_invoice')]</field>
+            <field name="context">{'default_move_type': 'out_invoice','default_appointment_id': active_id}</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="med_appointment_smart_room_action" model="ir.actions.act_window">
+            <field name="name">Rooms</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">med.appointment.room</field>
+            <field name="domain">[('type','in',('room','vip','normal'))]</field>
+            <field name="context">{}</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="med_appointment_smart_bed_action" model="ir.actions.act_window">
+            <field name="name">Beds</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">med.appointment.room.bed</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="med_appointment_view_form" model="ir.ui.view">
+            <field name="name">med.appointment.view_form</field>
+            <field name="model">med.appointment</field>
+            <field name="arch" type="xml">
+                <form string="Patient Appointment">
+                    <header>
+                        <field name="state" widget="statusbar"/>
+                        <button name="move_to_reception" type="object" states="sleep,doctor" string="Move to Reception" class="oe_highlight"/>
+                        <button name="move_to_sleep" type="object" states="reception,doctor" string="Move to Sleeping" class="oe_highlight"/>
+                        <button name="move_to_doctor" type="object" states="reception,sleep" string="Move to Doctor" class="oe_highlight"/>
+
+                        <!-- <button name="create_room_appointment" type="object" string="Room/Bed Appointment" class="oe_highlight"/>
+                        <button name="unreserve" type="object" string="Unreserve" class="oe_highlight"/> -->
+                    </header>
+                    <field name="invoice_has_outstanding" invisible="1"/>
+                    <!-- <field name="invoice_outstanding_credits_debits_widget" invisible="0"/> -->
+                    <div class="alert alert-success mb-0" role="alert" attrs="{'invisible':[('invoice_has_outstanding', '=', False)]}">
+                        This patient has payment of : <b>
+                            <field name="invoice_outstanding_credits_debits_widget"/> SDG
+                        </b>
+                    </div>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+
+                            <button type="action" class="oe_stat_button" icon="fa-home" name="%(almulazmeen_custom.med_appointment_smart_room_action)d">
+                                <div class="o_form_field o_stat_info">
+                                    <span class="o_stat_text">Rooms</span>
+                                </div>
+                            </button>
+
+                            <button type="action" class="oe_stat_button" icon="fa-bed" name="%(almulazmeen_custom.med_appointment_smart_bed_action)d">
+                                <div class="o_form_field o_stat_info">
+                                    <span class="o_stat_text">Beds</span>
+                                </div>
+                            </button>
+
+                            <button type="action" class="oe_stat_button" icon="fa-pencil-square-o"
+                                    name="%(almulazmeen_custom.med_appointment_smart_invoice_action)d">
+                                <div class="o_form_field o_stat_info">
+                                    <span class="o_stat_value">
+                                        <field name="invoice_count"/>
+                                    </span>
+                                    <span class="o_stat_text">Invoices</span>
+                                </div>
+                            </button>
+
+                        </div>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                        <group col="4">
+                            <field name="payment_type"/>
+                            <field name="create_date"/>
+                            <field name="create_uid"/>
+                        </group>
+                        <group string="PATIENT PERSONAL DATA" col="2" style="color:#011F42;">
+                            <br/>
+                            <group>
+                                <field name="patient_id"/>
+                                <field name="age"/>
+                                <field name="gender"/>
+                                <field name="residence"/>
+                                <field name="occupation"/>
+                                <field name="note"/>
+                            </group>
+                            <group>
+                                <field name="file_number"/>
+                                <field name="doctor_id"/>
+                                <field name="ref_doctor"/>
+                                <field name="date"/>
+                                <field name="next_date"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            
+                            <page string="HISTORY"
+                            groups="almulazmeen_custom.group_reception,almulazmeen_custom.group_doctor">
+                                <group string="HISTORY" col="4" style="color:#011F42;">
+                                    <field name="hypertension"/>
+                                    <field name="asthma"/>
+                                    <field name="diabetus_mellitus"/>
+                                    <field name="cardiac_disorders"/>
+                                    <field name="respiratory_disorders"/>
+                                    <field name="neurological_disorders"/>
+                                </group>
+                                <group col="2">
+                                    <field name="others"/>
+                                    <field name="histroy_of_surgery"/>
+                                </group>
+                            </page>
+                            <page string="Lab Requests"
+                            groups="almulazmeen_custom.group_reception,almulazmeen_custom.group_doctor">
+                                 <group string="Lab Requests" col="4" style="color:#011F42;">
+                                     <field name="lab_ids" nolabel="1">
+                                         <tree editable="bottom">
+                                             <field name="lab_product_id"/>
+                                             <field name="result" widget="binary" readonly="1"/>
+                                             <field name="create_date"/>
+                                         </tree>
+                                     </field>
+                                 </group>
+                            </page>
+                            <page string="Prescribed Drugs"
+                            groups="almulazmeen_custom.group_reception,almulazmeen_custom.group_doctor">
+                                 <group string="Prescribed Drugs " col="4" style="color:#011F42;">
+                                     <field name="drug_ids" nolabel="1">
+                                         <tree editable="bottom">
+                                             <field name="pos_product_id"/>
+                                             <field name="use"/>
+                                             <field name="comments"/>
+                                             <field name="create_date"/>
+                                         </tree>
+                                     </field>
+                                 </group>
+                            </page>
+                            
+                            <page string="Operation Requests"
+                            groups="almulazmeen_custom.group_reception,almulazmeen_custom.group_doctor">
+                                 <group string="Operation Requests" col="4" style="color:#011F42;">
+                                     <field name="operation_ids" nolabel="1">
+                                         <tree editable="bottom">
+                                             <field name="operation_product_id"/>
+                                             <field name="date"/>
+                                             <field name="result" widget="binary" readonly="1"/>
+                                             <field name="comments"/>
+                                             <field name="create_date"/>
+                                         </tree>
+                                     </field>
+                                 </group>
+                            </page>
+
+                            <page name="room_reservation" string="Room reservation" groups="almulazmeen_custom.group_sleeping">
+                                <group string="Room Reservation" col="4" style="color:#011F42;">
+                                <field name="room_appointment_ids" nolabel="1">
+                                    <tree editable="bottom">
+                                        <field name="room_id" />
+                                        <field name="patient_id" />
+                                        <field name="doctor_id" />
+                                        <field name="date_from" />
+                                        <field name="date_to" />
+                                        <field name="difference" />
+                                        <field name="state" />
+                                        <button name="reserve_button" type="object" string="Reserve" attrs="{'invisible':[('state', '=', 'reserve')]}" class="oe_highlight"/>
+
+                                        <button name="unreserve_button" type="object" string="Unreserve" attrs="{'invisible':[('state', '=', 'empty')]}" class="oe_highlight"/>
+                                    </tree>
+                                </field> 
+                                </group>
+                            </page>
+
+                            <page name="bed_reservation" string="Bed reservation" groups="almulazmeen_custom.group_sleeping">
+                                <group string="Bed Reservations" col="4" style="color:#011F42;">
+                                <field name="bed_appointment_ids" nolabel="1">
+                                    <tree editable="bottom">
+                                        <field name="bed_id"  />
+                                        <field name="patient_id" />
+                                        <field name="doctor_id" />
+                                        <field name="date_from" />
+                                        <field name="date_to" />
+                                        <field name="difference" />
+                                        <field name="state" />
+                                        <button name="reserve_button" type="object" string="Reserve" attrs="{'invisible':[('state', '=', 'reserve')]}" class="oe_highlight"/>
+
+                                        <button name="unreserve_button" type="object" string="Unreserve" attrs="{'invisible':[('state', '=', 'empty')]}" class="oe_highlight"/>
+                                    </tree>
+                                </field>
+                                </group>
+                            </page>
+                            <page string="Doctor Visits" groups="almulazmeen_custom.group_reception,almulazmeen_custom.group_doctor">
+                                <group string="Doctor Visits" col="4" style="color:#011F42;">
+                                    <field name="visit_ids" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name="visit_product_id"/>
+                                            <field name="patient_id"/>
+                                            <field name="doctor_id"/>
+                                            <field name="comments"/>
+                                            <field name="date"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="med_appointment_view_tree" model="ir.ui.view">
+            <field name="name">med.appointment.view.tree</field>
+            <field name="model">med.appointment</field>
+            <field name="arch" type="xml">
+                <tree string="Patient Appointment">
+                    <field name="create_date"/>
+                    <field name="create_uid"/>
+                    <field name="name"/>
+                    <field name="state"/>
+                    <field name="patient_id"/>
+                    <field name="age"/>
+                    <field name="gender"/>
+                    <field name="residence"/>
+                    <field name="occupation"/>
+                    <field name="file_number"/>
+                    <field name="doctor_id"/>
+                    <field name="ref_doctor"/>
+                    <field name="date"/>
+                    <field name="next_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="med_appointment_action" model="ir.actions.act_window">
+            <field name="name">Patient Appointment</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">med.appointment</field>
+            <field name="context">{'default_payment_type':'private'}</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="med_appointment_root"
+                  web_icon="almulazmeen_custom,static/src/img/appointment.png"
+                  groups="almulazmeen_custom.group_reception,almulazmeen_custom.group_doctor"
+                  name="Patient Appointment" sequence="133"/>
+        <menuitem id="med_appointment_menu" name="Patient Appointment" parent="med_appointment_root" action="med_appointment_action" sequence="1"/>
+
+        <!--  Medical Insurance -->
+        <record id="med_appointment_action_insurance" model="ir.actions.act_window">
+            <field name="name">Patient Appointment</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">med.appointment</field>
+            <field name="context">{'default_payment_type':'insurance'}</field>
+            <field name="domain">[('payment_type','=','insurance')]</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+         <menuitem id="med_appointment_menu_insurance" name="Patient Appointment" parent="med_insurance_company_root" action="med_appointment_action_insurance" sequence="1"/>
+
+    </data>
+</odoo>

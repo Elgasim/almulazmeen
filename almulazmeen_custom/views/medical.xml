@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--    Medical Insurance  Company  -->
+        <record id="med_insurance_company_view_form" model="ir.ui.view">
+            <field name="name">med.insurance.company_view.form</field>
+            <field name="model">med.insurance.company</field>
+            <field name="arch" type="xml">
+                <form string="Medical Insurance Company">
+                    <sheet>
+                        <div>
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="image" widget="image" nolabel="1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="med_insurance_company_view_tree" model="ir.ui.view">
+            <field name="name">med.insurance.company.view.tree</field>
+            <field name="model">med.insurance.company</field>
+            <field name="arch" type="xml">
+                <tree string="Medical Insurance Company">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="med_insurance_company_action" model="ir.actions.act_window">
+            <field name="name">Insurance Company</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">med.insurance.company</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="med_insurance_company_root" name="Medical Insurance"
+                  web_icon="almulazmeen_custom,static/src/img/med_insurance.png"
+                  groups="almulazmeen_custom.group_medical_insurance"
+                  sequence="123"/>
+        <menuitem id="med_insurance_company_menu" name="Insurance Company" parent="med_insurance_company_root" action="med_insurance_company_action" sequence="3"/>
+
+        <!--   Medical Insurance Card  -->
+        <record id="med_insurance_card_view_form" model="ir.ui.view">
+            <field name="name">med.insurance_card.view.form</field>
+            <field name="model">med.insurance.card</field>
+            <field name="arch" type="xml">
+                <form string="Medical Insurance Card">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="patient_id"/>
+                            <field name="insurance_company"/>
+                            <field name="expiry_date"/>
+                            <field name="type"/>
+                            <field name="pricelist_id"/>
+                            <field name="note"/>
+                        </group>
+                        <group>
+                            <field name="image" style="max-width:100px;max-height:auto;" nolabel="1" widget="image"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="med_insurance_card_view_tree" model="ir.ui.view">
+            <field name="name">med.insurance.card.view.tree</field>
+            <field name="model">med.insurance.card</field>
+            <field name="arch" type="xml">
+                <tree string="med_insurance_card_tree">
+                    <field name="name"/>
+                    <field name="patient_id"/>
+                    <field name="insurance_company"/>
+                    <field name="expiry_date"/>
+                    <field name="type"/>
+                    <field name="pricelist_id"/>
+                    <field name="note"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="med_insurance_card_action" model="ir.actions.act_window">
+            <field name="name">Insurance Card</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">med.insurance.card</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="med_insurance_card_menu" name="Insurance Card" parent="med_insurance_company_root" action="med_insurance_card_action" sequence="2"/>
+
+    </data>
+</odoo>
