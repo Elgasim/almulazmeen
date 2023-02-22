@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_medical_inspection,medical.inspection,model_medical_inspection,medical_inspection.group_inspection,1,1,1,1
+access_medical_inspection_project,medical.inspection.project,model_medical_inspection_project,medical_inspection.group_inspection,1,1,1,1
+access_medical_inspection_project_activity,medical.inspection.project.activity,model_medical_inspection_project_activity,medical_inspection.group_inspection,1,1,1,1
