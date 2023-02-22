@@ -1,0 +1,348 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* invoice_template
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-22 08:15+0000\n"
+"PO-Revision-Date: 2023-02-22 08:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__access_warning
+msgid "Access warning"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__create_uid
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template_services__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__create_date
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template_services__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,help:invoice_template.field_invoice_template__access_url
+msgid "Customer Portal URL"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__display_name
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template_services__display_name
+msgid "Display Name"
+msgstr "الاسم"
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,help:invoice_template.field_invoice_template__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_account_bank_statement_line__has_template
+#: model:ir.model.fields,field_description:invoice_template.field_account_move__has_template
+#: model:ir.model.fields,field_description:invoice_template.field_account_payment__has_template
+msgid "Has template"
+msgstr "قالب فاتوره"
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__id
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template_services__id
+msgid "ID"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__activity_exception_icon
+msgid "Icon"
+msgstr "الايقونه"
+
+#. module: invoice_template
+#: model:ir.model.fields,help:invoice_template.field_invoice_template__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,help:invoice_template.field_invoice_template__message_needaction
+#: model:ir.model.fields,help:invoice_template.field_invoice_template__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,help:invoice_template.field_invoice_template__message_has_error
+#: model:ir.model.fields,help:invoice_template.field_invoice_template__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.actions.act_window,name:invoice_template.action_model_invoice_template_action
+msgid "Invoice Template"
+msgstr "قالب الفاتوره"
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_account_bank_statement_line__invoice_template_id
+#: model:ir.model.fields,field_description:invoice_template.field_account_move__invoice_template_id
+#: model:ir.model.fields,field_description:invoice_template.field_account_payment__invoice_template_id
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template_services__invoice_template_id
+#: model:ir.model.fields,field_description:invoice_template.field_med_appointment__invoice_template_id
+msgid "Invoice template"
+msgstr "قالب الفاتوره"
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model,name:invoice_template.model_account_move
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template____last_update
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template_services____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__write_uid
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template_services__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__write_date
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template_services__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model,name:invoice_template.model_med_appointment
+msgid "Medical Appointment"
+msgstr "الحجوزات الطبيه"
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,help:invoice_template.field_invoice_template__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,help:invoice_template.field_invoice_template__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,help:invoice_template.field_invoice_template__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__access_url
+msgid "Portal Access URL"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template_services__service_id
+msgid "Product Name"
+msgstr "اسم الخدمه"
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template_services__qty
+msgid "Quanity"
+msgstr "عدد مرات الخدمه"
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسئول"
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__access_token
+msgid "Security Token"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__sequence_number
+msgid "Sequence Number"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__sequence_prefix
+msgid "Sequence Prefix"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__service_ids
+msgid "Service"
+msgstr "الخدمه"
+
+#. module: invoice_template
+#: model_terms:ir.ui.view,arch_db:invoice_template.inherited_account_move_form
+msgid "Service Template"
+msgstr "قالب الخدمه"
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_account_bank_statement_line__service_ids
+#: model:ir.model.fields,field_description:invoice_template.field_account_move__service_ids
+#: model:ir.model.fields,field_description:invoice_template.field_account_payment__service_ids
+#: model_terms:ir.ui.view,arch_db:invoice_template.view-model_invoice_template_view_form
+msgid "Services"
+msgstr "الخدمات"
+
+#. module: invoice_template
+#: model:ir.model.fields,help:invoice_template.field_invoice_template__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,help:invoice_template.field_invoice_template__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model.fields,help:invoice_template.field_invoice_template__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.model,name:invoice_template.model_invoice_template
+msgid "invoice template"
+msgstr "قالب الفاتوره"
+
+#. module: invoice_template
+#: model:ir.model,name:invoice_template.model_invoice_template_services
+msgid "invoice template Services"
+msgstr ""
+
+#. module: invoice_template
+#: model:ir.ui.menu,name:invoice_template.invoice_template_menu
+msgid "medical invoice template"
+msgstr "قالب الفاتوره الطبيه"
+
+#. module: invoice_template
+#: model:ir.model.fields,field_description:invoice_template.field_invoice_template__name
+msgid "name"
+msgstr "الاسم"

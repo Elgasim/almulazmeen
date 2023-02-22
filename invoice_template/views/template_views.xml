@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view-model_invoice_template_view_form" model="ir.ui.view">
+        <field name="name">view.model.invoice.template.view.form</field>
+        <field name="model">invoice.template</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                       <field name="name" /> 
+                    </group>
+                    <notebook>
+                        <page string="Services">
+                            <field name="service_ids">
+                                <tree editable="bottom">
+                                    <field name="service_id" />
+                                    <field name="qty" />
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view-model_invoice_template_view_tree" model="ir.ui.view">
+        <field name="name">view.model.invoice.template.view.tree</field>
+        <field name="model">invoice.template</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" /> 
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_model_invoice_template_action" model="ir.actions.act_window">
+        <field name="name">Invoice Template</field>
+        <field name="res_model">invoice.template</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+
+    <menuitem
+        id="invoice_template_menu"
+        name="medical invoice template"
+        action="action_model_invoice_template_action"
+        parent="account.menu_finance_receivables"
+        sequence="102"/>
+    
+</odoo>
